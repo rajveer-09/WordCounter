@@ -1,0 +1,91 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d1d8eb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    padding-top: 50px;
+}
+
+/* Main heading (h1) styles */
+h1 {
+    color: #5D5C61;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Paragraph (p) styles */
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Textarea styles */
+textarea#word {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Word count display styles */
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Word count number styles */
+span#show {
+    color: #5D5C61;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some spacing to the bottom of the page */
+body::after {
+    content: "";
+    display: block;
+    height: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Textarea styles for smaller screens */
+    textarea#word {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    textarea#word {
+        width: 100%;
+    }
+
+    /* Adjust heading and paragraph styles for mobile */
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
